@@ -1,15 +1,118 @@
 /* style.css */
+/* General body styles */
 body {
-    background-color: lightgray;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #f0e68c; /* Light khaki background */
+    color: #2f4f4f; /* Dark slate gray text */
+    margin: 20pt; /* Margin greater than 10pt for all sides */
 }
 
-h1 {
-    color: purple;
+/* Container and header styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
+header h1 {
+    font-size: 36pt;
+    color: #4682b4; /* Steel blue */
+    font-weight: bold;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 24pt;
+    color: #6a5acd; /* Slate blue */
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20pt;
+    color: #8a2be2; /* Blue violet */
+}
+
+/* Paragraph styles */
 p {
-    font-size: 16px;
-    color: navy;
+    font-size: 14pt;
+    color: #4b0082; /* Indigo */
+}
+
+/* List styling */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #000080; /* Navy blue for both visited and non-visited links */
+}
+
+a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+a:active {
+    color: #32cd32; /* Lime green when clicked */
+}
+
+/* Image styling */
+.linkedin-profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Skills and Certifications section */
+.skills, .certifications {
+    margin-top: 20px;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #6a5acd; /* Slate blue on hover */
+}
+
+/* Contact information styling */
+.contact-info a {
+    color: #000080; /* Navy */
+    text-decoration: underline;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray borders */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10pt;
+    color: #2f4f4f;
 }
