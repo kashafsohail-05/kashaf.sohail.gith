@@ -58,10 +58,10 @@ a:active {
 
 /* Image styling */
 .linkedin-profile-picture {
-    border-radius: 70%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 70%; /* Optional: make it circular */
+    margin-bottom: 20px; /* Space below the image */
 }
 
 /* Skills and Certifications section */
