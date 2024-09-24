@@ -1,47 +1,40 @@
 /* style.css */
-/* General body styles */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 12pt;
-    background-color: #e5eff3; 
-    color: #07587b; 
-    margin: 20pt; /* Margin greater than 10pt for all sides */
+    font-family: Arial, sans-serif; /* Font for the body */
+    font-size: 12pt; /* Font size for the body */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    margin: 20pt; /* Margin for all sides */
 }
 
-/* Container and header styling */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+/* Heading Styles */
+h1 {
+    font-family: 'Georgia', serif; /* Font for H1 */
+    font-size: 2.5em; /* Size for H1 */
+    color: #0073e6; /* Blue color for H1 */
+    margin-bottom: 10pt; /* Space below H1 */
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 36pt;
-    color: #4682b4; /* Steel blue */
-    font-weight: bold;
-}
-
-/* Heading styles */
 h2 {
-    font-size: 24pt;
-    color: #6a5acd; /* Slate blue */
-    margin-top: 20px;
+    font-family: 'Arial', sans-serif; /* Font for H2 */
+    font-size: 2em; /* Size for H2 */
+    color: #0056b3; /* Darker blue color for H2 */
+    margin-bottom: 8pt; /* Space below H2 */
 }
 
 h3 {
-    font-size: 20pt;
-    color: #8a2be2; /* Blue violet */
+    font-family: 'Arial', sans-serif; /* Font for H3 */
+    font-size: 1.5em; /* Size for H3 */
+    color: #003d80; /* Even darker blue color for H3 */
+    margin-bottom: 6pt; /* Space below H3 */
 }
 
-/* Paragraph styles */
+/* Paragraph Styles */
 p {
-    font-size: 14pt;
-    color: #4b0082; /* Indigo */
+    font-family: 'Arial', sans-serif; /* Font for paragraphs */
+    font-size: 1em; /* Size for paragraphs */
+    color: #555; /* Medium gray color for text */
+    margin-bottom: 10pt; /* Space below paragraphs */
 }
 
 /* List styling */
