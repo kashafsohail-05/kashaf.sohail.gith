@@ -4,14 +4,14 @@ body {
     font-size: 12pt; /* Font size for the body */
     background-color: #f0f0f0; /* Light gray background */
     color: #333; /* Dark gray text color */
-    margin: 20pt; /* Margin for all sides */
+    margin: 30pt; /* Margin for all sides */
 }
 
 /* Heading Styles */
 h1 {
-    font-family: 'Georgia', serif; /* Font for H1 */
-    font-size: 2.5em; /* Size for H1 */
-    color: #0073e6; /* Blue color for H1 */
+    font-family: 'Josefin Sans Bold', serif; /* Font for H1 */
+    font-size: 5em; /* Size for H1 */
+    color: #6a2929; /* Blue color for H1 */
     margin-bottom: 10pt; /* Space below H1 */
 }
 
