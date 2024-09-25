@@ -10,7 +10,7 @@ body {
 /* Heading Styles */
 h1 {
     font-family: 'Candara'; /* Font for H1 */
-    font-size: 5em;
+    font-size: 50px;
     color: #800276; /* color for H1 */
     text-align: center;
     margin-bottom: 10pt; /* Space below H1 */
@@ -18,14 +18,14 @@ h1 {
 
 h2 {
     font-family: 'Arial', sans-serif; /* Font for H2 */
-    font-size: 2em; /* Size for H2 */
+    font-size: 30px; /* Size for H2 */
     color: #0262c8; /* color for H2 */
     margin-bottom: 8pt; /* Space below H2 */
 }
 
 h3 {
     font-family: 'Calibri', sans-serif; /* Font for H3 */
-    font-size: 1.5em; /* Size for H3 */
+    font-size: 24px; /* Size for H3 */
     color: #4b0080; /* color for H3 */
     margin-bottom: 6pt; /* Space below H3 */
 }
