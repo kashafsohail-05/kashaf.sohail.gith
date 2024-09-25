@@ -10,8 +10,9 @@ body {
 /* Heading Styles */
 h1 {
     font-family: 'Josefin Sans Bold', serif; /* Font for H1 */
-    font-size: 5em; /* Size for H1 */
-    color: #6a2929; /* Blue color for H1 */
+    font-size: 36px;
+    color: #1d3358; /* Blue color for H1 */
+    text-align: center;
     margin-bottom: 10pt; /* Space below H1 */
 }
 
