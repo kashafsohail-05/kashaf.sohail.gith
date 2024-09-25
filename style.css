@@ -9,9 +9,9 @@ body {
 
 /* Heading Styles */
 h1 {
-    font-family: 'Josefin Sans Bold', serif; /* Font for H1 */
+    font-family: 'Josefin Sans Bold'; /* Font for H1 */
     font-size: 36px;
-    color: #1d3358; /* Blue color for H1 */
+    color: #800276; /* color for H1 */
     text-align: center;
     margin-bottom: 10pt; /* Space below H1 */
 }
@@ -19,14 +19,14 @@ h1 {
 h2 {
     font-family: 'Arial', sans-serif; /* Font for H2 */
     font-size: 2em; /* Size for H2 */
-    color: #0056b3; /* Darker blue color for H2 */
+    color: #0262c8; /* color for H2 */
     margin-bottom: 8pt; /* Space below H2 */
 }
 
 h3 {
     font-family: 'Arial', sans-serif; /* Font for H3 */
     font-size: 1.5em; /* Size for H3 */
-    color: #003d80; /* Even darker blue color for H3 */
+    color: #4b0080; /* color for H3 */
     margin-bottom: 6pt; /* Space below H3 */
 }
 
@@ -34,7 +34,7 @@ h3 {
 p {
     font-family: 'Arial', sans-serif; /* Font for paragraphs */
     font-size: 1em; /* Size for paragraphs */
-    color: #555; /* Medium gray color for text */
+    color: #555; /* color for text */
     margin-bottom: 10pt; /* Space below paragraphs */
 }
 
@@ -61,7 +61,6 @@ a:active {
 .linkedin-profile-picture {
     width: 200px; /* Adjust width as needed */
     height: 200px; /* Adjust height as needed */
-    border-radius: 70%; /* Optional: make it circular */
     margin-bottom: 20px; /* Space below the image */
 }
 
