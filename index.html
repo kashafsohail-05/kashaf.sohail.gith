@@ -7,19 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="about.html">About</a>
+            </li>
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="#">More</a>
+                <ul class="dropdown-content">
+                    <li><a href="#program-details">Program Details</a></li>
+                    <li><a href="#work-experience">Work Experience</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <header>
         <div class="container">
             <h1>Kashaf Sohail</h1>
         </div>
     </header>
+
+     <!-- Button for Prompting User's Name -->
+    <div>
+        <button id="nameButton">Enter Your Name</button>
+        <p id="nameDisplay"></p> <!-- Name will display here -->
+    </div>
+    
+    <!-- Clickable Image -->
     <div style="text-align: center;">
-        <a href="https://www.linkedin.com/in/kashaf-sohail/" target="_blank">
-            <img src= "https://media.licdn.com/dms/image/v2/D4D03AQGLhuNPBHiUrA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1727117599317?e=1732752000&v=beta&t=CIQjhVauEHP1kVm-P4YwDDBJvocIJrZW8QGV3vV-cCM" alt="Kashaf Sohail LinkedIn Profile Picture" class="linkedin-profile-picture">
+        <a href="#" id="profileImage">
+            <img src="images/profile.jpeg" alt="Kashaf Sohail Profile" class="small-image">
         </a>
     </div>
 
     <div class="container main">
-        <h2>Education</h2>
+        <h2 id="education">Education</h2>
         <div class="table">
             <div class="table-row">
                 <div class="table-cell">
@@ -39,10 +66,10 @@
             </div>
         </div>
 
-        <h2>Program Details</h2>
+        <h2 id="program-details">Program Details</h2>
         <p>I am pursuing a Bachelor of Commerce degree with a specialization in Business Technology Management at Toronto Metropolitan University. This program combines business fundamentals with the latest technology trends, preparing students for a range of roles in the technology and business sectors.</p>
         
-        <h2>Courses</h2>
+        <h2 id="courses">Courses</h2>
         <ol>
             <li>Business Analytics</li>
             <li>Competitive Intelligence</li>
@@ -58,12 +85,12 @@
             <p>This course was particularly useful because it provided hands-on experience with data analysis tools and techniques. Learning to analyze data and create visualizations has been instrumental in my ability to interpret and present information effectively in various projects and internships.</p>
         </div>
 
-        <h2>Awards and Achievements</h2>
+        <h2 id="awards-achievements">Awards and Achievements</h2>
         <ul>
             <li><strong>Dean's List (2020-2024)</strong></li>
         </ul>
 
-        <h2>Professional Development</h2>
+        <h2 id="professional-development">Professional Development</h2>
         <ul>
             <li>EY's Women in Tech+ Consulting Conference</li>
             <li>Digital Financial Skills Accelerator Program (Microsoft x CIBC x Toronto Metropolitan University)</li>
@@ -71,14 +98,14 @@
             <li>TMU DECA — Team Leader</li>
         </ul>
 
-        <h2>Work Experience</h2>
+        <h2 id="work-experience">Work Experience</h2>
         <ul>
             <li><strong>Scotiabank, Global Wholesale Operations:</strong> Data Analytics Intern (Sept 2023 – Aug 2024)</li>
             <li><strong>TMU Diversity Institute:</strong> Research Project Associate (May 2023 – Aug 2023)</li>
             <li><strong>Long Views Systems:</strong> Business System Analyst Intern (May 2022 – Aug 2022)</li>
         </ul>
 
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <div class="skills">
             <h3>Technical Knowledge</h3>
             <ul>
@@ -100,7 +127,7 @@
             </ul>
         </div>
 
-        <h2>Certifications</h2>
+        <h2 id="certifications">Certifications</h2>
         <div class="certifications">
             <ul>
                 <li><strong>Microsoft Certifications:</strong></li>
@@ -112,7 +139,7 @@
 
         <a href="https://www.linkedin.com/in/kashaf-sohail/" class="button" target="_blank">Visit My LinkedIn Profile</a>
 
-        <div class="contact-info">
+        <div class="contact-info" id="contact-info">
             <h2>Contact Information</h2>
             <p><strong>Email:</strong> <a href="mailto:kashaf.sohail05@gmail.com">kashaf.sohail05@gmail.com</a></p>
             <p><strong>Phone:</strong> 416-788-0481</p>
@@ -122,5 +149,7 @@
     <footer>
         <p>&copy; 2024 Kashaf Sohail. All rights reserved.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

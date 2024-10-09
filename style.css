@@ -124,6 +124,77 @@ a:active {
 .table-cell p {
     margin: 0; /* Remove default margin */
 }
+/* Navigation Menu Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #64666a;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: #333;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a1bde3;
+    min-width: 160px;
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #74a2e3;
+}
+
+/* Small Image Styling */
+.small-image {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.enlarged-image {
+    transform: scale(2); /* Enlarge the image */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects for Nav Menu */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Display User Name Styling */
+#nameDisplay {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
 
 /* Footer styling */
 footer {
