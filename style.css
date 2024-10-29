@@ -1,41 +1,43 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif; /* Font for the body */
-    font-size: 12pt; /* Font size for the body */
-    background-color: #f0f0f0; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated Font */
+    font-size: 14pt; /* Increased font size for better readability */
+    background-color: #e9ecef; /* Softer background color */
     color: #333; /* Dark gray text color */
     margin: 30pt; /* Margin for all sides */
+    line-height: 1.6; /* Improved line height for readability */
 }
 
 /* Heading Styles */
 h1 {
-    font-family: 'Courier New'; /* Font for H1 */
-    font-size: 65px;
-    color: #021d80; /* color for H1 */
+    font-family: 'Montserrat', sans-serif; /* Modern font for H1 */
+    font-size: 60px; /* Size for H1 */
+    color: #003366; /* Dark blue for H1 */
     text-align: center;
-    margin-bottom: 10pt; /* Space below H1 */
+    margin-bottom: 20pt; /* Space below H1 */
+    text-transform: uppercase; /* Uppercase for emphasis */
 }
 
 h2 {
-    font-family: 'Calibri', sans-serif; /* Font for H2 */
-    font-size: 30px; /* Size for H2 */
-    color: #0262c8; /* color for H2 */
-    margin-bottom: 8pt; /* Space below H2 */
+    font-family: 'Montserrat', sans-serif; /* Consistent font for H2 */
+    font-size: 36px; /* Size for H2 */
+    color: #00509e; /* Light blue for H2 */
+    margin-bottom: 15pt; /* Space below H2 */
 }
 
 h3 {
-    font-family: 'Futura', sans-serif; /* Font for H3 */
-    font-size: 20px; /* Size for H3 */
-    color: #802eba; /* color for H3 */
-    margin-bottom: 6pt; /* Space below H3 */
+    font-family: 'Montserrat', sans-serif; /* Consistent font for H3 */
+    font-size: 24px; /* Size for H3 */
+    color: #6c757d; /* Gray for H3 */
+    margin-bottom: 10pt; /* Space below H3 */
 }
 
 /* Paragraph Styles */
 p {
     font-family: 'Arial', sans-serif; /* Font for paragraphs */
     font-size: 1em; /* Size for paragraphs */
-    color: #555; /* color for text */
-    margin-bottom: 10pt; /* Space below paragraphs */
+    color: #555; /* Color for text */
+    margin-bottom: 15pt; /* Space below paragraphs */
 }
 
 /* List styling */
@@ -46,7 +48,7 @@ ul, ol {
 /* Link styles */
 a {
     text-decoration: none;
-    color: #000080; /* Navy blue for both visited and non-visited links */
+    color: #007bff; /* Bootstrap primary blue */
 }
 
 a:hover {
@@ -62,6 +64,8 @@ a:active {
     width: 250px; /* Adjust width as needed */
     height: 250px; /* Adjust height as needed */
     margin-bottom: 20px; /* Space below the image */
+    border-radius: 50%; /* Rounded image */
+    border: 5px solid #007bff; /* Blue border around image */
 }
 
 /* Skills and Certifications section */
@@ -72,31 +76,34 @@ a:active {
 /* Button styling */
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #4682b4; /* Steel blue */
+    padding: 12px 25px; /* Slightly larger padding */
+    background-color: #007bff; /* Bootstrap primary blue */
     color: white;
     text-align: center;
     border-radius: 5px;
     margin-top: 20px;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .button:hover {
-    background-color: #6a5acd; /* Slate blue on hover */
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Contact information styling */
 .contact-info a {
-    color: #000080; /* Navy */
+    color: #007bff; /* Bootstrap primary blue */
     text-decoration: underline;
 }
 
 /* Table styling */
-/* CSS Table Styles */
 .table {
     display: table; /* Use table display */
     width: 100%; /* Full width of the container */
     border-collapse: collapse; /* Collapse borders */
     margin-top: 20pt; /* Space above the table */
+    background-color: #ffffff; /* White background for tables */
+    border-radius: 5px; /* Rounded corners for table */
+    overflow: hidden; /* Clip corners */
 }
 
 .table-row {
@@ -105,14 +112,14 @@ a:active {
 
 .table-cell {
     display: table-cell; /* Each cell in the table */
-    padding: 10pt; /* Padding for each cell */
-    border: 1px solid #ccc; /* Light gray border around cells */
+    padding: 15pt; /* Padding for each cell */
+    border: 1px solid #dee2e6; /* Light gray border around cells */
     vertical-align: top; /* Align text to the top */
 }
 
 /* Additional cell styles */
 .table-cell a {
-    color: #0073e6; /* Default link color */
+    color: #007bff; /* Default link color */
     text-decoration: none; /* No underline */
 }
 
@@ -124,13 +131,15 @@ a:active {
 .table-cell p {
     margin: 0; /* Remove default margin */
 }
+
 /* Navigation Menu Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #64666a;
+    background-color: #343a40; /* Dark background */
     overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 nav ul li {
@@ -143,17 +152,19 @@ nav ul li a {
     color: white;
     text-decoration: none;
     text-align: center;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 nav ul li:hover {
-    background-color: #333;
+    background-color: #495057; /* Lighter shade on hover */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #a1bde3;
+    background-color: #f8f9fa; /* Light background */
     min-width: 160px;
+    border-radius: 5px; /* Rounded corners for dropdown */
 }
 
 .nav-item:hover .dropdown-content {
@@ -168,7 +179,7 @@ nav ul li:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #74a2e3;
+    background-color: #e2e6ea; /* Light gray on hover */
 }
 
 /* Small Image Styling */
@@ -191,31 +202,35 @@ nav ul li a:hover {
 
 /* Display User Name Styling */
 #nameDisplay {
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increased font size for better visibility */
     margin-top: 10px;
     color: #333;
+    text-align: center; /* Centering the display */
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     margin-top: 40px;
-    font-size: 10pt;
-    color: #2f4f4f;
+    font-size: 12pt;
+    color: #495057; /* Dark gray */
+    padding: 20px; /* Padding around footer */
+    background-color: #f1f1f1; /* Light footer background */
+    border-top: 1px solid #dee2e6; /* Border on top of footer */
 }
 
-/* Contact HTML styling*/
+/* Contact HTML styling */
 /* Form Title */
 .form-container h1 {
-    font-size: 24px; /* Title font size */
+    font-size: 28px; /* Increased title font size */
     text-align: center; /* Center alignment */
-    color: #021d80; /* Consistent color */
+    color: #003366; /* Consistent color */
     margin-bottom: 15px; /* Space below title */
 }
 
 /* Line Breaks for Spacing */
 .form-group {
-    margin-bottom: 15px; /* Space between groups */
+    margin-bottom: 20px; /* Increased space between groups */
 }
 
 /* Input Field Styles */
@@ -225,8 +240,8 @@ footer {
 .form-group select,
 .form-group textarea {
     width: 100%; /* Full width for inputs */
-    padding: 10px; /* Padding for input fields */
-    border: 1px solid #ddd; /* Light border */
+    padding: 12px; /* Increased padding for input fields */
+    border: 1px solid #ccc; /* Light border */
     border-radius: 5px; /* Rounded corners */
     box-sizing: border-box; /* Include padding and border in width */
 }
@@ -234,21 +249,22 @@ footer {
 /* Button Styles */
 .btn {
     width: 48%; /* Button width */
-    padding: 10px; /* Padding for buttons */
+    padding: 12px; /* Increased padding for buttons */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     font-weight: bold; /* Bold button text */
     cursor: pointer; /* Pointer cursor on hover */
     color: #ffffff; /* White text color */
     margin: 5px 1%; /* Space around buttons */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .btn.submit {
-    background-color: #4CAF50; /* Green */
+    background-color: #28a745; /* Green */
 }
 
 .btn.clear {
-    background-color: #f44336; /* Red */
+    background-color: #dc3545; /* Red */
 }
 
 .btn:hover {
