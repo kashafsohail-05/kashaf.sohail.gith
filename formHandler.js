@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Store data in local storage
         localStorage.setItem('contactFormData', JSON.stringify(formData));
 
-        // Optionally, alert the user
+        // Alert the user
         alert('Thank you for your feedback!');
 
         // Clear the form
