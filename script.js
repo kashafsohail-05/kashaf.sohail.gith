@@ -1,3 +1,4 @@
+// Display user's name
 document.addEventListener('DOMContentLoaded', () => {
     // Name prompt and display
     document.getElementById('nameButton').addEventListener('click', function() {

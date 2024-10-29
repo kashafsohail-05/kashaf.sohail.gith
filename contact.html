@@ -3,50 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+   
+    <!-- Adding a link to a Google Icons font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
-    </header>
+    <!-- Comments explaining the purpose of this form and its functionality -->
+    <!-- This form collects feedback from users about the website and stores the data in local storage. -->
+    
+    <div class="container">
+        <h1 class="form-title">Contact Us</h1>
+        <form id="contactForm" class="contact-form">
+            <!-- 1. Single Text Field: Name -->
+            <div class="form-group">
+                <label for="name">
+                    <i class="material-icons">person</i> Name:
+                </label>
+                <input type="text" id="name" required>
+            </div>
+            <br> <!-- Line break -->
 
-    <main>
-        <section id="contact-form">
-            <h2>Send a Message</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <!-- 2. Email Input -->
+            <div class="form-group">
+                <label for="email">
+                    <i class="material-icons">email</i> Email:
+                </label>
+                <input type="email" id="email" required>
+            </div>
+            <br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <!-- 3. Phone Number Input -->
+            <div class="form-group">
+                <label for="phone">
+                    <i class="material-icons">phone</i> Phone Number:
+                </label>
+                <input type="tel" id="phone" required>
+            </div>
+            <br>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+            <!-- 4. Multiple Text Field: Message -->
+            <div class="form-group">
+                <label for="message">
+                    <i class="material-icons">message</i> Message:
+                </label>
+                <textarea id="message" rows="4" required></textarea>
+            </div>
+            <br>
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
+            <!-- 5. Radio Buttons: How did you find us? -->
+            <fieldset class="form-group">
+                <legend>
+                    <i class="material-icons">search</i> How did you find my website?
+                </legend>
+                <label>
+                    <input type="radio" name="referral" value="Search Engine" required>
+                    Search Engine
+                </label>
+                <label>
+                    <input type="radio" name="referral" value="Social Media">
+                    Social Media
+                </label>
+                <label>
+                    <input type="radio" name="referral" value="Friend">
+                    Friend
+                </label>
+                <label>
+                    <input type="radio" name="referral" value="Other">
+                    Other
+                </label>
+            </fieldset>
+            <br>
 
-        <section id="contact-details">
-            <h2>Get in Touch</h2>
-            <ul>
-                <li>Email: <a href="mailto:kashaf.sohail05@gmail.com">kashaf.sohail05@gmail.com</a></li>
-                <li>Phone: <a href="tel:+4167880481">+4167880481</a></li>
-                <li>Location: [Toronto, ON]</li>
-            </ul>
-        </section>
+            <!-- 6. Checkboxes: What features do you like? -->
+            <fieldset class="form-group">
+                <legend>
+                    <i class="material-icons">thumb_up</i> What features do you like about the website? (Select all that apply)
+                </legend>
+                <label>
+                    <input type="checkbox" name="features" value="Design">
+                    Design
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Content">
+                    Content
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Navigation">
+                    Navigation
+                </label>
+                <label>
+                    <input type="checkbox" name="features" value="Speed">
+                    Speed
+                </label>
+            </fieldset>
+            <br>
 
-        <section id="social-media">
-            <h2>Follow Me</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/kashaf-sohail/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </section>
-    </main>
+            <!-- 7. Dropdown Select: How likely are you to recommend us? -->
+            <div class="form-group">
+                <label for="recommendation">
+                    <i class="material-icons">star</i> How likely are you to recommend us?
+                </label>
+                <select id="recommendation" required>
+                    <option value="">Select an option</option>
+                    <option value="Very Likely">Very Likely</option>
+                    <option value="Somewhat Likely">Somewhat Likely</option>
+                    <option value="Not Likely">Not Likely</option>
+                    <option value="Not at All Likely">Not at All Likely</option>
+                </select>
+            </div>
+            <br>
 
-    <footer>
-        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
-    </footer>
+            <!-- 8. Feedback Field: Additional Comments -->
+            <div class="form-group">
+                <label for="additionalComments">
+                    <i class="material-icons">comment</i> Additional Comments:
+                </label>
+                <textarea id="additionalComments" rows="4"></textarea>
+            </div>
+            <br>
+
+            <!-- 9. Submit and Clear Buttons -->
+            <div class="form-group">
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="reset" class="clear-button">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="formHandler.js"></script>
 </body>
 </html>

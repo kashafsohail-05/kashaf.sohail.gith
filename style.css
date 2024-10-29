@@ -203,3 +203,66 @@ footer {
     font-size: 10pt;
     color: #2f4f4f;
 }
+
+/* Contact HTML styling*/
+/* Form Title */
+.form-container h1 {
+    font-size: 24px; /* Title font size */
+    text-align: center; /* Center alignment */
+    color: #021d80; /* Consistent color */
+    margin-bottom: 15px; /* Space below title */
+}
+
+/* Line Breaks for Spacing */
+.form-group {
+    margin-bottom: 15px; /* Space between groups */
+}
+
+/* Input Field Styles */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Button Styles */
+.btn {
+    width: 48%; /* Button width */
+    padding: 10px; /* Padding for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #ffffff; /* White text color */
+    margin: 5px 1%; /* Space around buttons */
+}
+
+.btn.submit {
+    background-color: #4CAF50; /* Green */
+}
+
+.btn.clear {
+    background-color: #f44336; /* Red */
+}
+
+.btn:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%; /* Adjust form width for small screens */
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons on smaller screens */
+        margin: 5px 0; /* Adjust margins for buttons */
+    }
+}
