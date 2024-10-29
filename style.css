@@ -5,12 +5,12 @@ body {
     background-color: #e9ecef; /* Softer background color */
     color: #333; /* Dark gray text color */
     margin: 30pt; /* Margin for all sides */
-    line-height: 1.6; /* Improved line height for readability */
+    line-height: 1.6; /* line height for readability */
 }
 
 /* Heading Styles */
 h1 {
-    font-family: 'Montserrat', sans-serif; /* Modern font for H1 */
+    font-family: 'Montserrat', sans-serif; /*  font for H1 */
     font-size: 60px; /* Size for H1 */
     color: #003366; /* Dark blue for H1 */
     text-align: center;
