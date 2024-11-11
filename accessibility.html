@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Accessibility Page</h1>
+        <p>This page demonstrates accessible media elements with captions and controls.</p>
+        <!-- Accessibility Buttons -->
+        <div class="accessibility-controls">
+            <button id="enlarge-text-btn">Enlarge Text</button>
+            <button id="toggle-color-btn">Toggle Color Scheme</button>
+        </div>
+    </header>
+
+    <section>
+        <h2>Accessible Video Content</h2>
+        
+        <figure>
+            <iframe src="https://archive.org/embed/TheGallopinGaucho" width="640" height="480" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+            <figcaption>
+                Video description: "The Gallopin' Gaucho," a 1928 silent animated film starring Mickey Mouse. 
+                Source: Disney, W. (1928). <em>The Gallopin' Gaucho</em> [Video]. Archive.org. 
+                Retrieved from https://archive.org/details/TheGallopinGaucho
+            </figcaption>
+        </figure>
+        
+        <p>This video is a historical animation from the early days of Disney, showcasing one of Mickey Mouse's earliest appearances.</p>
+    </section>
+
+    <section id="images">
+        <h2>Image Gallery</h2>
+        
+        <div id="image-gallery"> <!-- Wrap images in a container -->
+
+            <!-- Image 1 -->
+            <figure>
+                <img src="images/cafe.jpg" alt="A cozy cafe table scene showing a chocolate croissant on a white plate in the foreground, dusted with cocoa powder and decorated with a swirl of cream. Behind it are two iced lattes in clear plastic cups with the logo Monderie on them. In the background, a person in a white shirt with long hair is seated at the table, with minimalistic wooden chairs visible." id="img1">
+                <figcaption>Photo taken on 2024-08-01 in Mississauga, Canada</figcaption>
+            </figure>
+        
+            <!-- Image 2 -->
+            <figure>
+                <img src="images/cat.jpg" alt=" A close-up of a brown tabby cat lying on a bed, looking directly at the camera with bright green eyes. The cat has a small red bow placed on top of its head, adding a touch of charm. The background includes a soft gray blanket and part of a bed frame." id="img2">
+                <figcaption>Photo taken on 2024-01-07 in My bedroom</figcaption>
+            </figure>
+        
+            <!-- Image 3 -->
+            <figure>
+                <img src="images/london eye.jpg" alt="A scenic view of the London Eye Ferris wheel against a partly cloudy sky. The giant wheel stands tall with its passenger capsules clearly visible. In the foreground, people are gathered on a bridge, and in the background, there is a historic-looking building with a green spire on the left side." id="img3">
+                <figcaption>Photo taken on 2024-06-26 in London, UK</figcaption>
+            </figure>
+        </div>
+
+    
+        <!-- Button to Display Alt Texts -->
+        <button onclick="displayAltText()">Display Alt Text for Images</button>
+    
+        <!-- Area to Show Alt Text -->
+        <div id="altTextDisplay"></div>
+    </section>
+    
+        <!-- JavaScript file for accessibility functionality -->
+        <script src="accessibility.js"></script>
+
+</body>
+</html>

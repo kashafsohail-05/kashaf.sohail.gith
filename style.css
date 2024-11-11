@@ -1,10 +1,10 @@
 /* style.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated Font */
-    font-size: 14pt; /* Increased font size for better readability */
+    font-size: 14pt; /*  font size for better readability */
     background-color: #e9ecef; /* Softer background color */
     color: #333; /* Dark gray text color */
-    margin: 30pt; /* Margin for all sides */
+    margin: 50pt; /* Margin for all sides */
     line-height: 1.6; /* line height for readability */
 }
 
@@ -35,7 +35,7 @@ h3 {
 /* Paragraph Styles */
 p {
     font-family: 'Arial', sans-serif; /* Font for paragraphs */
-    font-size: 1em; /* Size for paragraphs */
+    font-size: 16px; /* Size for paragraphs */
     color: #555; /* Color for text */
     margin-bottom: 15pt; /* Space below paragraphs */
 }
@@ -282,3 +282,193 @@ footer {
         margin: 5px 0; /* Adjust margins for buttons */
     }
 }
+
+
+
+/* Accessibility page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Darker text for readability */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #5f81ae; /* Steel blue */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    max-width: 800px; /* Limit the width for readability */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Heading Styles */
+h2 {
+    color: #36455b; /* Dark slate gray for section headings */
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+/* Figure and Video Styles */
+figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+iframe {
+    width: 100%; /* Make the video responsive */
+    max-width: 640px;
+    height: 360px;
+    border: 0;
+    border-radius: 8px; /* Rounded corners for video */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for video */
+}
+
+/* Caption Styles */
+figcaption {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 0.8em;
+    color: #333;
+    margin-bottom: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    iframe {
+        height: 240px; /* Adjust video height for smaller screens */
+    }
+}
+
+
+/* Accessibility Controls Styling */
+.accessibility-controls {
+    margin-top: 10px;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #1e374b; /* Steel blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a9bd3; /* Lighter blue on hover */
+}
+
+/* Enlarged Text */
+body.large-text {
+    font-size: 2em;
+}
+
+/* Black-and-White High Contrast Color Scheme */
+body.high-contrast {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+body.high-contrast header {
+    background-color: #111111; /* Slightly lighter black for header */
+    color: #ffffff;
+}
+
+body.high-contrast h1 {
+    background-color: #111111; /* Slightly lighter black for header */
+    color: #ffffff;
+}
+
+body.high-contrast h2 {
+    background-color: #111111; /* Slightly lighter black for header */
+    color: #ffffff;
+}
+
+body.high-contrast p {
+    background-color: #111111; /* Slightly lighter black for header */
+    color: #ffffff;
+}
+
+body.high-contrast section {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff; /* White border for contrast */
+}
+
+body.high-contrast figcaption {
+    color: #ffffff; /* Light gray for captions */
+}
+
+body.high-contrast button {
+    background-color: #444444; /* Dark gray buttons */
+    color: #ffffff;
+}
+
+body.high-contrast button:hover {
+    background-color: #666666; /* Slightly lighter gray on hover */
+}
+
+/* Image Gallery */
+
+#image-gallery {
+    text-align: center;
+    max-width: 800px;  /* Increase container width if needed */
+    margin: auto;
+}
+
+#image-gallery img {
+    width: 100%; /* Makes image scale with container */
+    max-width: 300px; /* Caps the size of the images */
+    height: auto; /* Ensures aspect ratio remains intact */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#altTextDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
